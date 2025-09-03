@@ -1,4 +1,4 @@
-# Exercise 1.
+# Exercises
 1. Crea una interfaz Motor con dos implementaciones (MotorGasolina y
 MotorElectrico). Una vez tengas las clases, intenta inyectarlas en otras dos
 clases diferentes (CocheGasolina y CocheElectrico). Haz que CocheGasolina
