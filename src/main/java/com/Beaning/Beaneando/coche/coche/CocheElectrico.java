@@ -1,20 +1,21 @@
 package com.Beaning.Beaneando.coche.coche;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-import com.Beaning.Beaneando.motor.motor.MotorElectrico;
+import com.Beaning.Beaneando.motor.motor.MotorInterface;
 
 @Component
 public class CocheElectrico {
 
-    private final MotorElectrico motorElectrico;
+    private final MotorInterface motorInterface;
 
-    public CocheElectrico(MotorElectrico motorElectrico) {
-        this.motorElectrico = motorElectrico;
+    public CocheElectrico(@Qualifier(MotorInterface.MOTOR_ELECTRICO) MotorInterface motorInterface) {
+        this.motorInterface = motorInterface;
     }
 
     public String arranca() {
-        return motorElectrico.getMotorType();
+        return motorInterface.getMotorType();
     }
 
 }
