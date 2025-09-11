@@ -38,4 +38,13 @@ public class CocheController {
         return motores.getMotores();
     }
 
+    @GetMapping("/motores/ordenados")
+    public List<NuevoMotor> getMotoresOrdenados() {
+        return motores.getMotoresOrdenados();
+    }
+    @GetMapping("/motores/invertidos")
+    public List<NuevoMotor> getMotoresInvertidos() {
+        return motores.getMotoresInvertidos();
+    }
+
 }
